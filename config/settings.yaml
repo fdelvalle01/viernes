@@ -1,0 +1,51 @@
+camera:
+  index: 0
+  width: 1280
+  height: 720
+  fps: 60
+  mirror: true
+  use_dshow: false
+
+vision:
+  max_num_hands: 2
+  min_detection_confidence: 0.65
+  min_tracking_confidence: 0.55
+  gesture_hold_seconds: 0.7
+  pointer_landmark: 8
+
+mouse:
+  enabled: true
+  smoothing: 0.25
+  max_step_pixels: 85
+  movement_margin: 0.08
+  update_interval_seconds: 0.015
+
+voice:
+  enabled: true
+  model_path: models/vosk-es
+  sample_rate: 16000
+  block_size: 8000
+  commands:
+    activate:
+      - activar
+    deactivate:
+      - desactivar
+    open_browser:
+      - abrir navegador
+      - abre navegador
+      - abrir google
+      - abre google
+      - navegador
+    exit:
+      - salir
+
+clap:
+  enabled: true
+  threshold: 0.65
+  cooldown_seconds: 1.2
+  sample_rate: 44100
+  block_size: 1024
+
+ui:
+  window_title: RV Camera Controller
+  show_audio_status: true

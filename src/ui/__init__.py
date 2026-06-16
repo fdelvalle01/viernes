@@ -1,0 +1,1 @@
+"""OpenCV UI rendering helpers."""
